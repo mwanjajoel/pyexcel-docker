@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Define environment variable
-ENV NAME .env
+ENV NAME .flaskenv
 
 # Run app.py when the container launches
 CMD ["flask", "run"]
