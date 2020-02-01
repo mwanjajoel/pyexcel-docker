@@ -1,12 +1,17 @@
 from fastapi import FastAPI 
+import pyexcel as p
+from pyexcel_xlsx import get_data
 
 app = FastAPI()
+
 
 @app.get("/")
 async def welcome():
     return {"PyExcel": "You have arrived!"}
 
-@app.get("/items/{item_id}")
-async def get_items(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
+@app.route("/upload", methods=['GET', 'POST'])
+async def upload_file():
+    return {"File":"Uploaded"}
+
+
 
