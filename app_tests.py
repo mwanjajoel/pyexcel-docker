@@ -1,4 +1,4 @@
 
-# this is a test for whether a file has been uploaded 
+# this is a sample test for whether a file has been uploaded 
 def test_upload_file():
     pass 
